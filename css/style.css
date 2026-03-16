@@ -1,0 +1,17 @@
+h2, p {
+    color: aliceblue;
+}
+
+body {
+    background-color: blueviolet;
+}
+
+.coitainer {
+    display: flex;
+}
+
+.mid {
+    height: 250px;
+    width: 100%;
+    background-color: rgb(255, 208, 0);
+}
