@@ -1,17 +1,76 @@
-h2, p {
-    color: aliceblue;
+* {
+    margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-    background-color: blueviolet;
+    background-color: #5b0f73;
 }
 
-.coitainer {
+header {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #6a0dad;
+    padding: 15px 30px;
+    color: white;
 }
 
-.mid {
-    height: 250px;
-    width: 100%;
-    background-color: rgb(255, 208, 0);
+.logo img {
+    width: 80px;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.icon img {
+    width: 25px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.banner {
+    background-color: #f4a300;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.banner img {
+    max-width: 300px;
+}
+
+.pedido {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.pedido button {
+    background-color: #6cff3c;
+    color: white;
+    font-size: 22px;
+    padding: 20px 60px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    box-shadow: 0 8px 0 #1c7a1c;
+    transition: 0.2s;
+}
+
+.pedido button:hover {
+    transform: translateY(3px);
+    box-shadow: 0 5px 0 #1c7a1c;
 }
