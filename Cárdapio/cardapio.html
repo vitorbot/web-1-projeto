@@ -16,11 +16,19 @@
             <div class="logo">
                 <img src="/img/28788699-2f85-4099-8d29-0df0cccced79-removebg-preview.png" alt="Baita Açaiteria" id="logotop">
             </div>
+            <div class="logo-collapse" onclick="abreMenu()">
+                <img src="https://cdn-icons-png.flaticon.com/512/6499/6499731.png" alt="Menu" id="menu-collapse">
+            </div>
             <ul class="nav-links">
                 <li><a href="#" class="linha">Quem somos</a></li>
                 <li><a href="#" class="linha">Cardápio</a></li>
                 <li><a href="#" class="linha">Contato</a></li>
             </ul>
+            <div class="nav-links-collapse">
+                <li><a href="#" class="linha">Quem somos</a></li>
+                <li><a href="#" class="linha">Cardápio</a></li>
+                <li><a href="#" class="linha">Contato</a></li>
+            </div>
             <div class="social-icons">
                 <a href="https://www.instagram.com/baita_acaiteria/" target="_blank">
                     <i class="fab fa-instagram"></i>
@@ -40,7 +48,7 @@
         <section class="card-grid">
     
             <div class="card">
-                <img src="acai-medio.jpg" alt="Açaí Médio">
+                <img src="/img/14002e26-5452-4376-9e80-5aa05e0ed316.jpg" alt="Açaí Médio">
                 <div class="card-content">
                     <h3>Açaí médio (330 ml)</h3>
                     <p>Açaí 330 ml - Inclui até 3 complementos grátis à sua escolha.</p>
@@ -49,7 +57,7 @@
             </div>
 
             <div class="card">
-                <img src="acai-grande.jpg" alt="Açaí Grande">
+                <img src="/img/bbf6f4c6-9510-4471-943b-8fd6cc960ae5.jpg" alt="Açaí Grande">
                 <div class="card-content">
                     <h3>Açaí Grande (550 ml)</h3>
                     <p>Açaí 550 ml - Inclui até 3 complementos grátis à sua escolha.</p>
@@ -58,7 +66,7 @@
             </div>
 
             <div class="card">
-                <img src="acai-batido.jpg" alt="Açaí Batido">
+                <img src="/img/a445cf9c-a985-459c-bd20-ec68bb0c9f94.jpg" alt="Açaí Batido">
                 <div class="card-content">
                     <h3>Açaí Batido</h3>
                     <p>Experimente o nosso açaí Batido 300 ml na garrafinha...</p>
@@ -68,6 +76,34 @@
 
         </section>
     </main>
+
+    <script>
+        const logoTop = document.querySelector("#logotop")
+        const menu = document.querySelector("#menu-collapse")
+        const links = document.querySelector(".nav-links-collapse")
+
+        window.addEventListener("resize", ()=>{
+            let larguraViewport = window.innerWidth;
+            console.log("Largura da Janela: " + larguraViewport + "px");
+
+            if(larguraViewport < 768) {
+                logoTop.style.display = "none"
+                menu.style.display = "block"
+            } else {
+                logoTop.style.display = "block"
+                menu.style.display = "none"
+            }
+        })
+
+        function abreMenu() {
+            if( links.style.display == "none" ) {
+                links.style.display = "block"
+            } else {
+                links.style.display = "none"
+            }
+        }
+        
+    </script>
 
 </body>
 </html>
