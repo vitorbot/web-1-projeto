@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baita Açaiteria</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="quemsomos.css">
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+
+    <div class="menu-toggle" id="menu-toggle">
+      ☰
+    </div>
+    <img src="img/28788699-2f85-4099-8d29-0df0cccced79-removebg-preview.png" alt="Baita Açaiteria">
+
+    <div class="logo">BAITA</div>
+
+    <ul class="nav-links" id="menu">
+      <li><a href="#">Quem somos</a></li>
+      <li><a href="#">Cardápio</a></li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+
+    <div class="icons">
+      <a href="https://https://www.instagram.com/baita_acaiteria?igsh=bmc5Nm80a3FtNGZk/" target="_blank">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+
+      <a href="https://wa.me/5551989724829" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+    </div>
+
+  </nav>
+</header>
+
+<section class="banner">
+  <h1>Quem somos</h1>
+</section>
+
+<section class="conteudo">
+  <p>
+    Nós somos a Baita Açaiteria, uma açaiteria localizada em Viamão que está iniciando suas atividades no mercado.
+    Nosso objetivo é oferecer açaí de qualidade, com ingredientes selecionados e um atendimento acolhedor.
+  </p>
+
+  <p>
+    Queremos crescer e nos tornar uma referência na região para quem gosta de um bom açaí.
+  </p>
+</section>
+
+<script>
+  const toggle = document.getElementById("menu-toggle");
+  const menu = document.getElementById("menu");
+
+  toggle.addEventListener("click", () => {
+    menu.classList.toggle("active");
+  });
+</script>
+
+</body>
+</html>
