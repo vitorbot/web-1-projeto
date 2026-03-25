@@ -1,0 +1,88 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Arial, sans-serif;
+}
+
+
+.navbar {
+  background: #5a0a7a;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+}
+
+.navbar nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.icons span {
+  margin-left: 15px;
+  font-size: 20px;
+}
+
+
+.banner {
+  background: #f4a300;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-content {
+  background: #5a0a7a;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  color: yellow;
+}
+
+.banner-content h2 {
+  margin-bottom: 10px;
+}
+
+.banner-content img {
+  width: 120px;
+}
+
+
+.pedido {
+  background: #5a0a7a;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pedido button {
+  background: linear-gradient(#5eff5e, #2ecc71);
+  border: none;
+  padding: 20px 50px;
+  font-size: 24px;
+  color: white;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 5px 0 #1e8449;
+  transition: 0.2s;
+}
+
+.pedido button:hover {
+  transform: scale(1.05);
+}
